@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/music_image_view"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/music_title"
+        android:text="music_title"
+        android:layout_alignTop="@id/music_size"
+        android:layout_alignLeft="@id/music_artist"
+        android:layout_alignStart="@id/music_artist" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/music_artist"
+        android:text="music_singer"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignBaseline="@id/music_duration"
+        android:layout_alignBottom="@id/music_duration"
+        android:layout_toRightOf="@id/music_image_view"
+        android:layout_toEndOf="@id/music_image_view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/music_size"
+        android:text="music_size"
+        android:layout_above="@id/music_duration"
+        android:layout_alignLeft="@id/music_duration"
+        android:layout_alignStart="@id/music_duration" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/music_duration"
+        android:text="music_duration"
+        android:layout_marginRight="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_alignBottom="@id/music_image_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp" />
+
+
+</RelativeLayout>
